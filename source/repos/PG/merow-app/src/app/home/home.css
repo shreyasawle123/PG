@@ -1,0 +1,29 @@
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.course-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f5f7fa;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  background: #e6f0ff;
+  transform: scale(1.03);
+}
+h3 a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+h3 a:hover {
+  color: #007bff;
+}

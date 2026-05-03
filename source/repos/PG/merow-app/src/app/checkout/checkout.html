@@ -1,0 +1,14 @@
+<p>checkout works!</p>
+<div class="checkout-container">
+
+  <h2>Checkout</h2>
+
+  <div class="card">
+    <h3>{{ planName() }}</h3>
+    <p>Course ID: {{ courseId() }}</p>
+    <p class="price">Price: ₹{{ price() }}</p>
+
+    <button (click)="buyNow()">Buy Now</button>
+  </div>
+
+</div>

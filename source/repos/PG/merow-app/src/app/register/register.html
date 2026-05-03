@@ -1,0 +1,39 @@
+<!-- <p>register works!</p>
+<div class="login-card">
+  <h2>Register</h2>
+
+  <input [(ngModel)]="email" placeholder="Email" />
+  <input [(ngModel)]="password" type="password" placeholder="Password" />
+
+  <button (click)="registerUser()">Register</button>
+</div>  -->
+<h2></h2>
+<div class="register-container">
+  <div class="register-card">
+
+    <h2>Create Account</h2>
+    <p>Start your learning journey with Mgoal</p>
+
+    <input [(ngModel)]="name" placeholder="Full Name" />
+    <input [(ngModel)]="email" placeholder="Email Address" />
+    <input [(ngModel)]="password" type="password" placeholder="Password" />
+
+    <button (click)="registerUser()">Register</button>
+
+    <p class="login-link">
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+
+  </div>
+</div>
+
+<!-- 
+<div class="login-card">
+  <h2>Register</h2>
+
+  <input [(ngModel)]="email" placeholder="Email" required />
+  <input [(ngModel)]="password" type="password" placeholder="Password" required />
+
+  <button (click)="registerUser()">Register</button>
+</div> -->

@@ -1,0 +1,50 @@
+<div class="login-container">
+  <div class="login-card">
+
+    <!-- PHONE LOGIN -->
+    <div *ngIf="!isEmailLogin">
+      <h2>Log in to Mgoal</h2>
+      <p>Enter your registered phone number</p>
+
+      <div class="phone-input">
+        <span>+91</span>
+        <input type="text" [(ngModel)]="phoneNumber" placeholder="Phone Number">
+      </div>
+
+      <button class="btn">Get OTP</button>
+
+      <div class="divider">Or</div>
+
+      <button class="alt-btn" (click)="showEmailLogin()">Login with Email</button>
+    </div>
+
+    <!-- EMAIL LOGIN -->
+    <div *ngIf="isEmailLogin">
+      <h2>Log in to Mgoal</h2>
+      <p>Enter your registered Email ID</p>
+
+      <input 
+        type="text" 
+        placeholder="Email ID" 
+        [(ngModel)]="email"
+        class="input-box"
+      >
+
+      <input 
+        type="password" 
+        placeholder="Password" 
+        [(ngModel)]="password"
+        class="input-box"
+      >
+
+      <button class="btn" (click)="loginWithEmail()">Next</button>
+
+      <div class="divider"></div>
+
+      <button class="alt-btn" (click)="isEmailLogin = false">
+        Login with Phone
+      </button>
+    </div>
+
+  </div>
+</div>

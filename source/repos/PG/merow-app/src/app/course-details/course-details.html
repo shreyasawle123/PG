@@ -1,0 +1,21 @@
+<p>course-details works!</p>
+<p>You selected: {{ courseId }}</p>
+<!-- <h2>{{ courseId | uppercase }} Plans</h2> -->
+
+<div class="plan-card" (click)="selectPlan('A')">
+  <h3>Plan A</h3>
+  <p>Videos + Test Series + QBank</p>
+  <p>₹4999</p>
+</div>
+
+<div class="plan-card" (click)="selectPlan('B')">
+  <h3>Plan B</h3>
+  <p>Test Series + QBank</p>
+  <p>₹2999</p>
+</div>
+
+<div class="plan-card" (click)="selectPlan('C')">
+  <h3>Plan C</h3>
+  <p>Only Test Series</p>
+  <p>₹999 (3 / 6 / 12 months)</p>
+</div>

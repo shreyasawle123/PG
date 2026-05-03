@@ -1,0 +1,59 @@
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* ✅ correct */
+  background: linear-gradient(90deg, #e0f7fa 0%, #b3e5fc 50%, #81d4fa 100%);
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(129, 212, 250, 0.08);
+}
+
+/* LOGO LEFT */
+.logo a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+/* CENTER LINKS */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* LINKS STYLE */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* RIGHT SIDE */
+.login {
+  display: flex;
+  gap: 10px;
+}
+
+/* LOGIN BUTTON */
+.login a:first-child {
+  color: #333;
+  text-decoration: none;
+}
+
+/* REGISTER BUTTON */
+.login a:last-child {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login a:last-child:hover {
+  background-color: #0056b3;
+}
