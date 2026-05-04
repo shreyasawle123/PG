@@ -1,0 +1,6 @@
+@MgoalAPI_HostAddress = http://localhost:5145
+
+GET {{MgoalAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
